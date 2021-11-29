@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>LaMorning</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+    crossorigin="anonymous"
+  >
+  <link
+    rel="stylesheet"
+    href="./sytle.css"
+  >
+</head>
+
+<body>
+  <div class="toast_dec"><img src="./img/toast.png" alt="toast"></div>
+  <div class="soup_dec"><img
+      src="./img/soup.png"
+      alt="soup"
+    ></div>
+
+  <div class="container">
+    <h2 class="text-center text-light pt-4"><img
+      class="p-4"
+      src="./img/logo.png"
+      alt="logo"
+    ></h2>
+    
+    <div class="row">
+      <!-- 左邊 -->
+      <div
+        class="col-md-4 p-4"
+        data-order-lists
+      >
+        <!-- <div class="card mb-3">
+          <div class="card-body pt-3 pr-3">
+            <div class="text-right">
+              <span data-alpha-pos="delete-drink">×</span>
+            </div>
+            <h6 class="card-title mb-1">Black Tea</h6>
+            <div class="card-text">Less Ice</div>
+            <div class="card-text">Half Sugar</div>
+          </div>
+          <div class="card-footer text-right py-2">
+            <div class="card-text text-muted">$ <span data-drink-price>30</span></div>
+          </div>
+        </div> -->
+        
+
+        <div class="text-right">
+          <button
+            class="btn btn-light"
+            style="min-width:120px;"
+            data-alpha-pos="checkout"
+          >Checkout</button>
+        </div>
+      </div>
+
+      <!-- 右邊 -->
+      <div
+        class="col-md-8 p-4"
+        data-order-panel
+      >
+        <section class="menu mb-4">
+          <div class="card-deck mb-3">
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Black Tea</h5>
+                <input
+                  type="radio"
+                  name="drink"
+                  value="Black Tea"
+                >
+              </label>
+            </div>
+      
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Oolong Tea</h5>
+                <input
+                  type="radio"
+                  name="drink"
+                  value="Oolong Tea"
+                >
+              </label>
+            </div>
+      
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Baozong Tea</h5>
+                <input
+                  type="radio"
+                  name="drink"
+                  value="Baozong Tea"
+                >
+              </label>
+            </div>
+      
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Green Tea</h5>
+                <input
+                  type="radio"
+                  name="drink"
+                  value="Green Tea"
+                >
+              </label>
+            </div>
+          </div>
+      
+          <div class="card-deck">
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Bubble Milk Tea</h5>
+                <input
+                  type="radio"
+                  name="drink"
+                  value="Bubble Milk Tea"
+                >
+              </label>
+            </div>
+      
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Black Tea Latte</h5>
+                <input
+                  type="radio"
+                  name="drink"
+                  value="Black Tea Latte"
+                >
+              </label>
+            </div>
+      
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Lemon Green</h5>
+                <input
+                  type="radio"
+                  name="drink"
+                  value="Lemon Green Tea"
+                >
+              </label>
+            </div>
+      
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Matcha Latte</h5>
+                <input
+                  type="radio"
+                  name="drink"
+                  value="Matcha Latte"
+                >
+              </label>
+            </div>
+          </div>
+        </section>
+      
+        <section class="ice mb-4">
+          <label class="d-block text-light">Ice</label>
+          <div
+            class="btn-group btn-group-toggle"
+            data-toggle="buttons"
+          >
+            <label class="btn btn-outline-primary">
+              <input
+                type="radio"
+                name="ice"
+                value="No Ice"
+              />No
+            </label>
+            <label class="btn btn-outline-primary">
+              <input
+                type="radio"
+                name="ice"
+                value="Less Ice"
+              />Less
+            </label>
+            <label class="btn btn-outline-primary active">
+              <input
+                type="radio"
+                name="ice"
+                value="Regular Ice"
+                checked="checked"
+              />Regular
+            </label>
+          </div>
+        </section>
+      
+        <section class="sugar mb-5">
+          <label class="d-block text-light">Sugar</label>
+          <div
+            class="btn-group btn-group-toggle"
+            data-toggle="buttons"
+          >
+            <label class="btn btn-outline-info">
+              <input
+                type="radio"
+                name="sugar"
+                value="No Sugar"
+              />No
+            </label>
+            <label class="btn btn-outline-info">
+              <input
+                type="radio"
+                name="sugar"
+                value="A Little Sugar"
+              />A Little
+            </label>
+            <label class="btn btn-outline-info">
+              <input
+                type="radio"
+                name="sugar"
+                value="Half Sugar"
+              />Half
+            </label>
+            <label class="btn btn-outline-info">
+              <input
+                type="radio"
+                name="sugar"
+                value="Less Sugar"
+              />Less
+            </label>
+            <label class="btn btn-outline-info active">
+              <input
+                type="radio"
+                name="sugar"
+                value="Regular Sugar"
+                checked="checked"
+              />Regular
+            </label>
+          </div>
+        </section>
+      
+        <div class="text-right">
+          <div
+            class="btn btn-light"
+            style="min-width:120px;"
+            data-alpha-pos="add-drink"
+          >Add</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

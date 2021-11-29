@@ -1,0 +1,75 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("./img/bg1.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.row {
+  max-height: 600px;
+}
+
+.col-md-4 {
+  overflow-y: auto;
+  max-height: 580px;
+}
+
+[data-alpha-pos="delete-drink"] {
+  display: inline-block;
+  text-align: center;
+  color: #999;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+[data-alpha-pos="delete-drink"]:hover {
+  color: #333;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border: 3px solid #0075c1;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.toast_dec {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 10;
+}
+
+.toast_dec img {
+  width: 250px;
+}
+
+.soup_dec {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 10;
+}
+
+.soup_dec img {
+  width: 250px;
+}
+/*# sourceMappingURL=sytle.css.map */

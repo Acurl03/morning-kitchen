@@ -1,8 +1,8 @@
 
-let bubbleMilkTea = new Drink('Bubble Milk Tea', 'No Sugar', 'Less Ice')
-let blackTea = new Drink('Black Tea', 'Half Sugar', 'No Ice')
-let lemonGreenTea = new Drink('Lemon Green Tea', 'No Sugar', 'Less Ice')
-let matchaLatte = new Drink('Matcha Latte', 'Less Sugar', 'Regular Ice')
+// let bubbleMilkTea = new Drink('Bubble Milk Tea', 'No Sugar', 'Less Ice')
+// let blackTea = new Drink('Black Tea', 'Half Sugar', 'No Ice')
+// let lemonGreenTea = new Drink('Lemon Green Tea', 'No Sugar', 'Less Ice')
+// let matchaLatte = new Drink('Matcha Latte', 'Less Sugar', 'Regular Ice')
 
 
 const alphaPos = new AlphaPos()
@@ -99,16 +99,16 @@ function Drink(name, sugar, ice) {
 
 Drink.prototype.price = function () {
   switch (this.name) {
-    case 'Black Tea':
-    case 'Oolong Tea':
-    case 'Baozong Tea':
-    case 'Green Tea':
+    case '古早紅茶':
+    case '古早奶茶':
+    case '鮮奶茶':
+    case '英式奶茶':
       return 30
-    case 'Bubble Milk Tea':
-    case 'Lemon Green Tea':
+    case '水果茶':
+    case '森林莓果茶':
       return 50
-    case 'Black Tea Latte':
-    case 'Matcha Latte':
+    case '研磨咖啡':
+    case '山藥薏仁':
       return 55
     default:
       alert('No this drink')
